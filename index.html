@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Calculatora</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body id="body" style="background: rgb(30, 30, 30, 1);width:100vw;height:100vh; overflow:hidden;">
+	<header id="header">
+        <section id="icon-dad" onclick="menu()">
+            <hr style = "border:1px solid #fff;" id="hr_1" />
+            <hr style = "border:1px solid #fff;" id="hr_2" />
+            <hr style = "border:1px solid #fff;" id="hr_3" />
+        </section>
+        <section id="content">
+            <section>
+                <h1>Que tal!</h1>
+                <br>
+                <br>
+                <ol>
+                    <p>Intrucciones de uso...</p>
+                    <br>
+                    <br>
+                    <li>La flecha elimina lo que tengas en la pantalla hasta el momento.</li>
+                    <br>
+                    <li>La D elimina el proceso de toda la operación.</li>
+                    <br>
+                    <li>Si yo fuera tu no pondría más de dos números en una misma operación :v (no hablo de dígitos, hablo de números).</li>
+                    <br>
+                    <li>Puedes cambiar el tema al darle a la pantalla. 😎</li>
+                </ol>
+            </section>
+        </section>
+    </header>
+    <div id="contenedor">
+        <div id="imprenta_1" onclick="cambio()">
+            <aside id="imprenta_2"></aside>
+            <article style="font-family: Times New Roman" id="imprenta"></article>
+        </div>
+    <div id="alone"></div>
+        <button class="operacion" onclick="RAIZ()"><span>√</span></button><button class="operacion" onclick="potencia()"><span>*</span></button><button class="operacion" onclick="division()"><span>/</span></button><button onclick="C()" id="d" class="c"><span>D</span></button>
+        <button onclick="siete()"><span>7</span></button><button onclick="ocho()"><span>8</span></button><button onclick="nueve()"><span>9</span></button><button class="operacion" onclick="multiplicacion()"><span>x</span></button>
+        <button onclick="cuatro()"><span>4</span></button><button onclick="cinco()"><span>5</span></button><button onclick="seis()"><span>6</span></button><button class="operacion" onclick="resta()"><span>-</span></button>
+        <button onclick="uno()"><span>1</span></button><button onclick="dos()"><span>2</span></button><button onclick="tres()"><span>3</span></button><button class="operacion" onclick="suma()"><span>+</span></button><button onclick="del()" class="c"><span>C</span></button><button id="cero" onclick="cero()"><span>0</span></button><button class="operacion" onclick="resultado()"><span>=</span></button>
+    </div>
+</body>
+</html> 
